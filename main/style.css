@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+body {
+    --primarycolor: blue;
+    --background-color:#eee;
+    --background-box:#dadada;
+    --color-box:#000;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background-color);
+}
+body.dark {
+    --primarycolor: green;
+    --background-box:#3b3b3b;
+    --background-color:#2d2c2d;
+    --color-box:white;
+}
+.total{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.content {
+    color: var(--primarycolor);
+}
+
+.switch-wp{
+    width: 90px;
+    background: var(--background-box);
+    border-radius: 20px;
+}
+.switch-wp label {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: block;
+    transition: 0.5s;
+}
+.switch-wp input:checked + label {
+    margin-left: 90px;
+    transform: translateX(-100%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .topic h1 {
+    color: var(--primarycolor);
+    padding: 20px;
+    margin-bottom: 55px;
+ }
+
+.contents {
+    padding: 50px;
+    background: var(--background-box);
+    border-radius: 15px;
+    font-size: 20px;
+    margin: 0 25px;
+}
+.contents span {
+    color: var(--color-box);
+}
+.btncts{
+   margin-top: 30px;
+   display: flex;
+   justify-content: space-around;
+}
+.btncts button {
+    background: var(--primarycolor);
+    padding: 13px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
